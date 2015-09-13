@@ -4,8 +4,11 @@ header-img: data/homecover.png
 email: unnikked@gmail.com
 description: "A computer engineering blog"
 url: "https://unnikked.ga"
+enforce_ssl: unnikked.ga
 twitter_username: unnikked
 github_username:  unnikked
+
+
 
 google-analytics: true
 ga-id: "UA-36754539-2"
