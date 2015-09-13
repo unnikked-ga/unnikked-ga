@@ -6,7 +6,6 @@ date:       2014-12-24 15:51:58
 author:     "Nicola Malizia"
 tags: ["interpreter", "java"]
 
-permalink: "/:title"
 
 twitter-card: true
 twitter-image: "data/how-to-build-a-brainfuck-interpreter.png"

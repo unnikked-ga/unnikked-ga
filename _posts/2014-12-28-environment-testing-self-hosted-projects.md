@@ -6,7 +6,6 @@ date:       2014-12-28 11:56:13
 author:     "Nicola Malizia"
 tags: ["vagrant"]
 
-permalink: "/:title"
 
 twitter-card: true
 twitter-image: "data/self-hosted-web-applications.png"

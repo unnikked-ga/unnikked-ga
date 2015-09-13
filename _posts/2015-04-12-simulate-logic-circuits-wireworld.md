@@ -6,8 +6,6 @@ date:       2015-04-12 14:20:00
 author:     "Nicola Malizia"
 tags: ["cellular automata", "python"]
 
-permalink: "/:title"
-
 twitter-card: true
 twitter-image: "data/wireworld.png"
 

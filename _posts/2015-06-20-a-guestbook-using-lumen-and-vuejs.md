@@ -6,8 +6,6 @@ date:       2015-06-20 16:58:00
 author:     "Nicola Malizia"
 tags: ["javascript", "php"]
 
-permalink: "/:title"
-
 twitter-card: true
 twitter-image: "http://i.imgur.com/sCDCwLJ.png"
 

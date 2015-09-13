@@ -6,7 +6,6 @@ date:       2014-11-01 15:00:00
 author:     "Nicola Malizia"
 tags: ["data structures", "java"]
 
-permalink: "/:title"
 
 twitter-card: true
 twitter-image: "data/the-stack-data-structure-2.png"

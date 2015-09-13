@@ -6,8 +6,6 @@ date:       2015-01-25 18:23:00
 author:     "Nicola Malizia"
 tags: ["cellular automata", "logisim"]
 
-permalink: "/:title"
-
 twitter-card: true
 twitter-image: "data/elementary-cellular-automaton.png"
 

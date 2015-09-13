@@ -6,8 +6,6 @@ date:       2015-06-28 14:42:00
 author:     "Nicola Malizia"
 tags: ["php", "telegram"]
 
-permalink: "/:title"
-
 twitter-card: true
 
 open-graph: true

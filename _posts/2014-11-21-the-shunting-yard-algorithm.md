@@ -6,7 +6,6 @@ date:       2014-11-21 15:00:00
 author:     "Nicola Malizia"
 tags: ["algorithms", "java"]
 
-permalink: "/:title"
 
 twitter-card: true
 twitter-image: "data/the-shunting-yard-algorithm.png"

@@ -6,7 +6,6 @@ date:       2014-10-25 15:00:00
 author:     "Nicola Malizia"
 tags: ["data structures", "java"]
 
-permalink: "/:title"
 
 twitter-card: true
 twitter-image: "data/welcome-to-my-blog.png"

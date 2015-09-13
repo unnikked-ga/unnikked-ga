@@ -6,8 +6,6 @@ date:       2015-01-04 11:58:11
 author:     "Nicola Malizia"
 tags: ["interpreter", "java"]
 
-permalink: "/:title"
-
 twitter-card: true
 twitter-image: "data/a-boolean-expression-evaluator.png"
 

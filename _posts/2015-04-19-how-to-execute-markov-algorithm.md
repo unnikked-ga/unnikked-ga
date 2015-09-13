@@ -6,8 +6,6 @@ date:       2015-05-19 11:34:00
 author:     "Nicola Malizia"
 tags: ["algorithms", "php"]
 
-permalink: "/:title"
-
 twitter-card: true
 twitter-image: "data/markov-algorithm.png"
 

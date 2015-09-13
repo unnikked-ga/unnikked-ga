@@ -6,8 +6,6 @@ date:       2015-03-25 19:00:00
 author:     "Nicola Malizia"
 tags: ["interpreter", "java"]
 
-permalink: "/:title"
-
 twitter-card: true
 twitter-image: "data/stack-machines.png"
 

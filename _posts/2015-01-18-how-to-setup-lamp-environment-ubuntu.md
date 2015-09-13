@@ -6,8 +6,6 @@ date:       2015-01-18 13:05:55
 author:     "Nicola Malizia"
 tags: ["self-hosted", "vps"]
 
-permalink: "/:title"
-
 twitter-card: true
 twitter-image: "data/how-to-setup-a-lamp-environment.png"
 

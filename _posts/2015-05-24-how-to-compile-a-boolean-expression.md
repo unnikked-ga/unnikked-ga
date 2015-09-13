@@ -6,8 +6,6 @@ date:       2015-05-24 19:21:00
 author:     "Nicola Malizia"
 tags: ["java", "compiler"]
 
-permalink: "/:title"
-
 twitter-card: true
 twitter-image: "data/compiling-a-boolean-expression.png"
 
