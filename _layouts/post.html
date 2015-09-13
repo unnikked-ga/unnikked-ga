@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<!-- Post Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1 style="text-shadow: 2px 2px #000000;">{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    <h2 style="text-shadow: 2px 2px #000000;" class="subheading">{{ page.subtitle }}</h2>
+                    {% endif %}
+                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				{{ content }}
+
+                <hr>
+                    <p>
+                    <span class="glyphicon glyphicon-tags"></span>&nbsp;
+                    {% if post %}
+                        {% assign tags = post.tags %}
+                    {% else %}
+                        {% assign tags = page.tags %}
+                    {% endif %}
+                        {% for tag in tags %}
+                        <span class="label label-default"><a href="/tags/#{{tag|slugize}}" style="text-decoration: none; text-color: #FFFFFF;">{{tag}}</a>{% unless forloop.last %} {% endunless %}</span>&nbsp;
+                    {% endfor %}
+                    </p>
+                <hr>
+                    {% include share.html %}
+                <hr>
+                    
+                    <div class="media">
+                        <img class="media-object pull-left img-responsive img-thumbnail" src="https://www.gravatar.com/avatar/1d189a7ef418e234bee5b21b11b4a6d4" alt="unnikked">
+                        <div class="media-body">
+                            <h4 class="media-heading">About unnikked</h4>
+                            <p>Passionate about tecnology and computer science. Students of Computer Engineering at Unical</p>
+                        </div>
+                    </div>
+                <hr>
+                
+                {% include comment.html %}
+                
+                <hr>
+                
+                <ul class="pager">
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>

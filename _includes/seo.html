@@ -1,0 +1,50 @@
+{% if page.twitter-card %}
+    {% assign twitter-url = page.url | prepend: site.baseurl | prepend: site.url %}
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ twitter-url }}">
+    {% if page.twitter-title %}
+    <meta name="twitter:title" content="{{ page.twitter-title }}">
+    {% else %}
+    <meta name="twitter:title" content="{{ page.title }}">
+    {% endif %}
+    {% if page.twitter-description %}
+    <meta name="twitter:description" content="{{ page.twitter-description | strip_html | truncatewords: 50 }}">
+    {% else %}
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 50 }}">
+    {% endif %}
+    {% if page.twitter-creator %}
+    <meta name="twitter:creator" content="{{ page.twitter-creator }}">
+    {% else %}
+    <meta name="twitter:creator" content="{{ site.title }}">
+    {% endif %}
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    {% if page.twitter-image %}
+    <meta name="twitter:image" content="{{ page.twitter-image}}">
+    {% else %}
+    <meta name="twitter:image" content="{{ page.header-img }}">
+    {% endif %}
+{% endif %}
+
+{% if page.open-graph %}
+    <!-- Open Graph data -->
+    {% if page.open-graph-title %}
+    <meta property="og:title" content="{{ page.open-graph-title }}" />
+    {% else %}
+    <meta property="og:title" content="{{ page.title }}" />
+    {% endif %}
+    <meta property="og:type" content="article" />
+    {% assign open-graph-url = page.url | prepend: site.baseurl | prepend: site.url %}
+    <meta property="og:url" content="{{ open-graph-url }}" />
+    {% if page.open-graph-image %}
+    <meta property="og:image" content="{{ page.open-graph-image }}" />
+    {% else %}
+    <meta property="og:image" content="{{ page.header-img }}" />
+    {% endif %}
+    {% if page.open-graph-description %}
+    <meta property="og:description" content="{{ page.open-graph-description }}" />
+    {% else %}
+    <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 50 }}" />
+    {% endif %}
+    <meta property="og:site_name" content="{{ site.title }}" />
+{% endif %}

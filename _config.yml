@@ -1,0 +1,34 @@
+# Site settings
+title: unnikked
+header-img: data/homecover.png
+email: unnikked@gmail.com
+description: "A computer engineering blog"
+url: "https://unnikked.ga"
+twitter_username: unnikked
+github_username:  unnikked
+
+google-analytics: true
+ga-id: "UA-36754539-2"
+
+defaults:
+  -
+      scope:
+        path: '_posts'
+        type: 'posts'
+      values:
+        reading_time: true
+        # Meta
+        show_tags: true
+        show_categories: true
+        # Social
+        share_buttons: true
+        disqus: true
+
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+permalink: /:title
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
