@@ -28,7 +28,6 @@ defaults:
 # Build settings
 markdown: redcarpet
 highlighter: pygments
-permalink: /:title
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
