@@ -6,6 +6,8 @@ date:       2015-07-05 16:10:00
 author:     "Nicola Malizia"
 tags: ["java", "telegram"]
 
+header-img: "data/cover/telegram-background.jpg"
+
 twitter-card: true
 twitter-image: "http://i.imgur.com/aSGsKbG.png"
 

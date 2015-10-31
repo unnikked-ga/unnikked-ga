@@ -6,6 +6,8 @@ date:       2015-06-25 22:10:00
 author:     "Nicola Malizia"
 tags: ["telegram"]
 
+header-img: "data/cover/telegram-background.jpg"
+
 twitter-card: true
 twitter-image: "http://i.imgur.com/jzuVTTi.png"
 
