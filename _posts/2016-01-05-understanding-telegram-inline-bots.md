@@ -21,13 +21,13 @@ On 4 January Telegram introduced a new feature for [The Bot Platform](/getting-s
 With this new feature you can interact with bots inline in your chat, besides having them as members! This is a nice feature since you can do a lot of stuff now without cluttering the chat. 
 
 As examples check out: 
-- [@gif](https://telegram.me/gif) - to search for gifs on Giphy,
-- [@vid](https://telegram.me/vid) - to search videos on Youtube.
-- [@pic](https://telegram.me/pic) - to search images on Yandex. 
-- [@bing](https://telegram.me/bing) - to search images on Bing.
-- [@wiki](https://telegram.me/wiki) - to search for terms on Wikipedia.
-- [@imdb](https://telegram.me/imdb) - to search movies infos on IMDB
-- [@bold](https://telegram.me/bold) - to convert texts to bold, italic and formatted
+- [@gif](https://telegram.me/gif) to search for gifs on Giphy,
+- [@vid](https://telegram.me/vid) to search videos on Youtube.
+- [@pic](https://telegram.me/pic) to search images on Yandex. 
+- [@bing](https://telegram.me/bing) to search images on Bing.
+- [@wiki](https://telegram.me/wiki) to search for terms on Wikipedia.
+- [@imdb](https://telegram.me/imdb) to search movies infos on IMDB
+- [@bold](https://telegram.me/bold) to convert texts to bold, italic and formatted
 
 ![example](https://lh3.googleusercontent.com/-_W26_IqV-8c/VownlckBdVI/AAAAAAAAAKU/DHruQcn5128/s0/photo_2016-01-05_21-28-35.jpg)
 
@@ -145,7 +145,7 @@ As you may notices, only searches are supported; no instant answers, no bangs.
 
 I've made all the edits to the end of the example file. 
 
-```php
+```
 if (isset($update["message"])) {
   processMessage($update["message"]);
 } else if (isset($update["inline_query"])) {
@@ -181,7 +181,7 @@ When replying the `inline_query_id` must be unique, since I don't know what it c
 
 The `results` field is made by the `queryDuckDuckGo($queryText)` function that looks like this:
 
-```php
+```
 function queryDuckDuckGo($query) {
   
   $content = file_get_contents('https://duckduckgo.com/html/?q=' . urlencode($query));
