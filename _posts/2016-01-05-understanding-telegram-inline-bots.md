@@ -22,13 +22,13 @@ With this new feature you can interact with bots inline in your chat, besides ha
 
 As examples check out: 
 <ul>
-<li>[@gif](https://telegram.me/gif) to search for gifs on Giphy.</li>
-<li> [@vid](https://telegram.me/vid) to search videos on Youtube.</li>
-<li>[@pic](https://telegram.me/pic) to search images on Yandex.</li>
-<li>[@bing](https://telegram.me/bing) to search images on Bing.</li>
-<li>[@wiki](https://telegram.me/wiki) to search for terms on Wikipedia.</li>
-<li>[@imdb](https://telegram.me/imdb) to search movies infos on IMDB.</li>
-<li>[@bold](https://telegram.me/bold) to convert texts to bold, italic and formatted.</li>
+<li><u>[@gif](https://telegram.me/gif)</u> to search for gifs on Giphy.</li>
+<li><u>[@vid](https://telegram.me/vid)</u> to search videos on Youtube.</li>
+<li><u>[@pic](https://telegram.me/pic)</u> to search images on Yandex.</li>
+<li><u>[@bing](https://telegram.me/bing)</u> to search images on Bing.</li>
+<li><u>[@wiki](https://telegram.me/wiki)</u> to search for terms on Wikipedia.</li>
+<li><u>[@imdb](https://telegram.me/imdb)</u> to search movies infos on IMDB.</li>
+<li><u>[@bold](https://telegram.me/bold)</u> to convert texts to bold, italic and formatted.</li>
 </ul>
 
 ![example](https://lh3.googleusercontent.com/-_W26_IqV-8c/VownlckBdVI/AAAAAAAAAKU/DHruQcn5128/s0/photo_2016-01-05_21-28-35.jpg)
