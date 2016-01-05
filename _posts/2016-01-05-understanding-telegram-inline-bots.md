@@ -229,4 +229,10 @@ That's all there is to it!
 
 ![enter image description here](https://lh3.googleusercontent.com/-eIZw8Q-TQQQ/Vowve_iOZpI/AAAAAAAAAK8/l20ignCNC1w/s0/photo_2016-01-05_22-02-29.jpg "inlineduckbot")
 
-By the way the bot name is [@inlineduckbot](http://telegram.me/inlineduckbot). 
+By the way the bot name is [@inlineduckbot](http://telegram.me/inlineduckbot). The source code is on [Gist](https://gist.github.com/unnikked/5c92aa7fd42f6eac2ab1). 
+
+## Conclusions
+
+Yes, this is a very nice feature that will enhance user experience. I've already had other ideas such as a definition bot and, a dictionary bot and a translator bot. 
+
+What do you think? Share your questions or ideas here. 
