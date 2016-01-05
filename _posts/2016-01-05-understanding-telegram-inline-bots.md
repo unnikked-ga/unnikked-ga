@@ -21,13 +21,15 @@ On 4 January Telegram introduced a new feature for [The Bot Platform](/getting-s
 With this new feature you can interact with bots inline in your chat, besides having them as members! This is a nice feature since you can do a lot of stuff now without cluttering the chat. 
 
 As examples check out: 
-- [@gif](https://telegram.me/gif) to search for gifs on Giphy,
-- [@vid](https://telegram.me/vid) to search videos on Youtube.
-- [@pic](https://telegram.me/pic) to search images on Yandex. 
-- [@bing](https://telegram.me/bing) to search images on Bing.
-- [@wiki](https://telegram.me/wiki) to search for terms on Wikipedia.
-- [@imdb](https://telegram.me/imdb) to search movies infos on IMDB
-- [@bold](https://telegram.me/bold) to convert texts to bold, italic and formatted
+<ul>
+<li>[@gif](https://telegram.me/gif) to search for gifs on Giphy.</li>
+<li> [@vid](https://telegram.me/vid) to search videos on Youtube.</li>
+<li>[@pic](https://telegram.me/pic) to search images on Yandex.</li>
+<li>[@bing](https://telegram.me/bing) to search images on Bing.</li>
+<li>[@wiki](https://telegram.me/wiki) to search for terms on Wikipedia.</li>
+<li>[@imdb](https://telegram.me/imdb) to search movies infos on IMDB.</li>
+<li>[@bold](https://telegram.me/bold) to convert texts to bold, italic and formatted.</li>
+</ul>
 
 ![example](https://lh3.googleusercontent.com/-_W26_IqV-8c/VownlckBdVI/AAAAAAAAAKU/DHruQcn5128/s0/photo_2016-01-05_21-28-35.jpg)
 
