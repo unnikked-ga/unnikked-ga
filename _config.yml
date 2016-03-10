@@ -30,7 +30,7 @@ defaults:
 
 # Build settings
 markdown: kramdown
-highlighter: rogue
+highlighter: rouge
 relative_permalinks: false
 permalink: /:title
 paginate: 5
