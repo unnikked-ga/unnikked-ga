@@ -20,7 +20,7 @@ Recently Telegram added [bot support](https://core.telegram.org/bots/api#recent-
 ## Requisites
 
 - A channel where you are administrator
-- A bot - you can check out my <u>[introduction post](/getting-started-with-telegram-bots)</u> to learn how to create a new bot
+- A bot - you can check out my [introduction post](/getting-started-with-telegram-bots) to learn how to create a new bot
 - An IFTTT account
 - A Google account (for Google Calendar)
 
@@ -61,7 +61,7 @@ You will see a dialog box like below (you may be asked to activate some channel 
 Where the customizable field means: 
 
 - `Keyword or phrase` - the keyword you want to use to trigger your recipe
-- `URL` - substitute at `[bot_key]` your private api token got by talking with <u>[@BotFather](https://telegram.me/botfather)</u>
+- `URL` - substitute at `[bot_key]` your private api token got by talking with [@BotFather](https://telegram.me/botfather)
 - `Body` - this is the JSON formatted payload request, edit it carefully. 
     - `chat_id` - insert here your channel name in the format `@channelname`, it is the public name that you gave to your channel
 
