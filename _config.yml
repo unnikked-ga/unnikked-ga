@@ -29,7 +29,7 @@ defaults:
 
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 relative_permalinks: false
 permalink: /:title
