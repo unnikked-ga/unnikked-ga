@@ -2,9 +2,9 @@
 layout:     post
 title:      "Exploring Telegram Bot API for Groups"
 subtitle:   "Maybe we want more actions"
-date:       2016-03-11 20:45:00
+date:       2016-03-11 20:30:00
 author:     "Nicola Malizia"
-tags: ["telegram"]
+tags: ["telegram", "javascript"]
 
 header-img: "data/cover/telegram-background.jpg"
 
