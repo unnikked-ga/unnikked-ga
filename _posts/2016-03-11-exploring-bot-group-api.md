@@ -18,7 +18,7 @@ open-graph-image: "https://lh3.googleusercontent.com/-N4xzHAWIAgw/VuMgtCR3VtI/AA
 
 When it comes to Telegram groups, the idea to add a bot is very natural. Bots can help to maintain groups active by providing custom features. 
 
-As an example: 
+As an example:
 - [@PoolBot](https://telegram.me/PollBot) to create pools for groups
 - [@TriviaBot](https://telegram.me/TriviaBot) to challenge a group to reply questions
 - [@GithubBot](https://telegram.me/githubbot) to get notified of pushes for your coders group. 
@@ -49,7 +49,7 @@ As you can see those fields are only informative. If you look to the [available 
 
 But this should not discourage us as we can still use this information to customize our group experience. 
 
-> In this blog post we assume that the bot can't read every message written on the group. That is bot privacy is set to *ENABLED*
+> In this blog post we assume that the bot can't read every message written on the group. That is bot privacy is set to *ENABLED*.
 
 ### The `new_chat_participant` Field
 
