@@ -47,6 +47,7 @@ If we look carefully to the documentation we can see:
 
 As you can see those fields are only informative. If you look to the [available methods](https://core.telegram.org/bots/api#available-methods) you will not see any method that let's you perform actions on groups (besides sending messages etc).
 
+
 But this should not discourage us as we can still use this information to customize our group experience. 
 
 > In this blog post we assume that the bot can't read every message written on the group. That is bot privacy is set to *ENABLED*.
