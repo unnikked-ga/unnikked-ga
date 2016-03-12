@@ -19,9 +19,11 @@ open-graph-image: "https://lh3.googleusercontent.com/-N4xzHAWIAgw/VuMgtCR3VtI/AA
 When it comes to Telegram groups, the idea to add a bot is very natural. Bots can help to maintain groups active by providing custom features. 
 
 As an example:
+
 - [@PoolBot](https://telegram.me/PollBot) to create pools for groups
 - [@TriviaBot](https://telegram.me/TriviaBot) to challenge a group to reply questions
 - [@GithubBot](https://telegram.me/githubbot) to get notified of pushes for your coders group. 
+
 
 The possibilities are endless. Unfortunately what Telegram lack for groups is the ability to let a bot moderate a group for you (so you can kick off spammers for example). 
 
