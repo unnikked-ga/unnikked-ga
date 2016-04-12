@@ -31,7 +31,6 @@ defaults:
 # Build settings
 markdown: kramdown
 highlighter: rouge
-relative_permalinks: false
 permalink: /:title/
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
