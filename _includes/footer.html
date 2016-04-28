@@ -67,7 +67,7 @@
 <script type="text/javascript">
     var diagrams = document.querySelectorAll("#diagram");
     for(i = 0; i < diagrams.length; i++) {
-        var diagram = flowchart.parse(diagrams[i].innerText);
+        var diagram = window.flowchart.parse(diagrams[i].innerText);
         diagrams[i].innerText = '';
         diagram.drawSVG(diagrams[i]);
     };
