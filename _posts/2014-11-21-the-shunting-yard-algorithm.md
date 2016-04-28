@@ -24,7 +24,7 @@ Using the Shunting Yard algorithm we will be able to convert this infix notation
 
 The Wikipedia page described very well this algorithm in a sort of pseudo-code so we will base on it, for who wants to go deepen you can read the [original paper](http://www.cs.utexas.edu/~EWD/MCReps/MR35.PDF) of Dijkstra. 
 
-##The algorithm
+## The algorithm
 
 - While there are tokens to be read:
 	- Read a token.
@@ -52,7 +52,7 @@ A simple execution of this algorithm we can see through this image
 <p align="center"><img class="img-thumbnail" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Shunting_yard.svg/628px-Shunting_yard.svg.png"></p>
 *(Image courtesy of Wikipedia)*
 
-##Implementation
+## Implementation
 
 I've implemented this algorithm in Java, and I added also a Lexer and a simple RPN evaluator to actually evaluate the parsed expression. 
 
