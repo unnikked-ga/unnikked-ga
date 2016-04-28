@@ -125,7 +125,7 @@ Particular attention must be done for branching instructions `[` and `]`.
 
 Every time we encounter `[` we need to perform a "jump" (i.e we enter in a loop) so we need to find the matching `]`, you can think the variable `l` the level of nested loops.
 
-##From Brainfuck to Java
+## From Brainfuck to Java
 Also translating a Brainfuck source code to a Java source code is pretty straightforward.
 
 Each Brainfuck instruction can be directly translated in an instruction of a high level language such Java following this schema: 
@@ -218,7 +218,7 @@ public class BrainfuckToJava {
 
 Please note that the Java Virtual Machine does not allow methods with [segment code that are more than 64KB](http://stackoverflow.com/questions/2407912/code-too-large-compilation-error-in-java/2408005#2408005), therefore there may be some Brainfuck programs that cannot be executed in a single Java method. 
 
-###Test the interpeter
+### Test the interpeter
 If you want to test this code you may download the source code from [here](https://gist.github.com/unnikked/cfad836abd9e4619a1b1). If you are on a Linux machine after compiled the code you can execute it by typing: 
 
 ```
@@ -227,6 +227,6 @@ java Brainfuck "$(cat source.bf)"
 
 Where `source.bf` is a valid Brainfuck program.
 
-##Conclusions
+## Conclusions
 
 If you want to go deep about Branfuck I suggest to read this [doc](https://docs.google.com/document/d/1M51AYmDR1Q9UBsoTrGysvuzar2_Hx69Hz14tsQXWV6M/edit). It contains also external resources, sample programs etc. 
