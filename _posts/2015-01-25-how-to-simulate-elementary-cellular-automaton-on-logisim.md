@@ -15,7 +15,7 @@ open-graph-image: "data/elementary-cellular-automaton.png"
 
 A cellular automaton is a discrete model studied in computability theory, mathematics, physics, complexity science, theoretical biology and microstructure modeling.
 
-A cellular automaton consists of a regular grid of cells, each in one of a finite number of states, such as on and off (in contrast to a coupled map lattice). The grid can be in any finite number of dimensions. For each cell, a set of cells called its neighborhood is defined relative to the specified cell. An initial state (time t = 0) is selected by assigning a state for each cell. A new generation is created (advancing t by 1), according to some fixed rule (generally, a mathematical function) that determines the new state of each cell in terms of the current state of the cell and the states of the cells in its neighborhood. Typically, the rule for updating the state of cells is the same for each cell and does not change over time, and is applied to the whole grid simultaneously. <sup>[<a href="http://en.wikipedia.org/wiki/Cellular_automaton" target="_blank">1</a>]</sup>
+> A cellular automaton consists of a regular grid of cells, each in one of a finite number of states, such as on and off (in contrast to a coupled map lattice). The grid can be in any finite number of dimensions. For each cell, a set of cells called its neighborhood is defined relative to the specified cell. An initial state (time t = 0) is selected by assigning a state for each cell. A new generation is created (advancing t by 1), according to some fixed rule (generally, a mathematical function) that determines the new state of each cell in terms of the current state of the cell and the states of the cells in its neighborhood. Typically, the rule for updating the state of cells is the same for each cell and does not change over time, and is applied to the whole grid simultaneously. <sup>[<a href="http://en.wikipedia.org/wiki/Cellular_automaton" target="_blank">1</a>]</sup>
 
 There are two main ways to define the concept of neighborhood in two dimensional CA (can be extended for other dimensions) :
 
@@ -27,7 +27,7 @@ That consists to count as neighbour the frame around the blue cell.
 
 That consists the red cells around the blue one and eventually (in some applications) also the pink one. 
 
-This model fascinated me for the property that simple rules can lead to complex behavior such the <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" title="Conway's Game of Life Cellular Automaton" target="_blank">Conway's Game of Life</a> which was proved to be <a href="http://en.wikipedia.org/wiki/Turing_completeness" title="Turing Completeness on Wikipedia alt="_blank">Turing Complete</a>. 
+This model fascinated me for the property that simple rules can lead to complex behavior such the <a href="http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" title="Conway's Game of Life Cellular Automaton" target="_blank">Conway's Game of Life</a> which was proved to be <a href="http://en.wikipedia.org/wiki/Turing_completeness" title="Turing Completeness on Wikipedia" alt="_blank">Turing Complete</a>. 
 
 In this blog post I'm going to describe how I simulated the most simple, but yet powerful, class of cellular automaton which is the <a href="http://en.wikipedia.org/wiki/Elementary_cellular_automaton" title="Elementary Cellular Automaton" target="_blank">elementary cellular automaton</a>.
 
@@ -37,7 +37,7 @@ An elementary cellular automaton is a one-dimensional cellular automaton where t
 
 There are 8 = 2<sup>3</sup> possible configurations for a cell and its two immediate neighbors. The rule defining the cellular automaton must specify the resulting state for each of these possibilities so there are 256 = 2<sup>2<sup>3</sup></sup> possible elementary cellular automata.
 
-The mathematician <a href="http://en.wikipedia.org/wiki/Stephen_Wolfram target="_blank">Stephen Wolfram</a> studied such mathematical model thoroughly in his book <i>A New Kind of Science</i> and proposed the so called <a href="http://en.wikipedia.org/wiki/Wolfram_code" target="_blank">Wolfram Code</a> to describe this particular class of cellular automaton. 
+The mathematician <a href="http://en.wikipedia.org/wiki/Stephen_Wolfram" target="_blank">Stephen Wolfram</a> studied such mathematical model thoroughly in his book <i>A New Kind of Science</i> and proposed the so called <a href="http://en.wikipedia.org/wiki/Wolfram_code" target="_blank">Wolfram Code</a> to describe this particular class of cellular automaton. 
 
 Since there are already tons of programs that shows how to simulate such class of cellular automaton (check <a href="http://rosettacode.org/wiki/Elementary_cellular_automaton" title="Elementary cellular automaton on Rosetta Code" target="_blank">here</a> on Rosetta Code) I've decided to challenge myself and I tried to implement the complete Wolfram Code via an electronic circuit using <a href="http://www.cburch.com/logisim/" title="Elementary cellular automaton in logisim" target="_blank">Logisim</a>.
 
