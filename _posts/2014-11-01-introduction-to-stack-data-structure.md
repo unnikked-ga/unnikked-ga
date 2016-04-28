@@ -95,7 +95,7 @@ We will cover later how to convert programmatically and infix expression to a po
 
 Here it comes the use of the stack. How we now evaluate a RPN expression ? Let's see this flow chart algorithm: 
 
-```
+<div id="diagram">
 st=>start: tokens
 e=>end
 push=>operation: Push
@@ -109,8 +109,8 @@ operand(no, right)->pop
 pop(right)->apply->push
 more(yes)->operand(yes)->push->more
 more(no)->e
+</div>
 
-```
 We consider and expression like $a$ $b$ $+$ $c$ $\times$ as a stream of tokens. So for each token we first ask to ourselves if such token is an operand or an operator. If it is an operand we push it on top of the stack and repeat the process. If it is an operator we pop $n$ operands (we know _a priori_ the _arity_ of the operator) from the stack, combine them (evaluate) and push the result on top the stack, we repeat the process for each token. If we consume all the tokens we exit. And now on the top of the stack there will be the result of the expression. 
 
 From this first example we learned that a stack should support two basic operations: **push** and **pop**. 
