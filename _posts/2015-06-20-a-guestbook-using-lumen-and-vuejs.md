@@ -38,7 +38,7 @@ The concepts that we will see in this blog post are:
 
 For the impatient reader here it is the final result that we will achieve.
 
-<p align="center"><img class="img-responsive img-thumbnail" src="http://i.imgur.com/lXQxsQq.png"\></p>
+<p align="center"><img class="img-responsive img-thumbnail" src="http://i.imgur.com/lXQxsQq.png"></p>
 
 ## Definition of API
 
