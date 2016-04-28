@@ -14,6 +14,7 @@ open-graph: true
 open-graph-image: "data/the-stack-data-structure-2.png"
 
 math: true
+flowchart: true
 ---
 
 We use stacks inadvertently every day, either using computer and in daily routines. Instead of defining directly the data structure we will see a first example on where a stack is used. 
