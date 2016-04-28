@@ -61,8 +61,9 @@
 <script type="text/javascript" src="{{ "/assets/js/libs/rrssb.min.js" | prepend: site.baseurl }}"></script>
 
 {% if page.flowchart %}
-<script src="raphael-min.js"></script>
-<script src="flowchart-latest.js"></script>
+<!--- Raphael JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+<script src="https://github.com/adrai/flowchart.js/raw/master/release/flowchart.min.js"></script>
 <script type="text/javascript">
     var diagrams = document.querySelectorAll("#diagram");
     for(i = 0; i < diagrams.length; i++) {
