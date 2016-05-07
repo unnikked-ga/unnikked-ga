@@ -13,9 +13,7 @@ twitter-image: "https://lh3.googleusercontent.com/-PNnRNoGFvV4/Vy3wEeDns0I/AAAAA
 
 open-graph: true
 open-graph-image: "https://lh3.googleusercontent.com/-PNnRNoGFvV4/Vy3wEeDns0I/AAAAAAAAASM/-bJh5LZebn8aRAX9n_PemNZNbW8-dlu6gCLcB/s0/handling-multimedia-files-telegram-bot.jpg"
-
 ---
-
 
 When it comes to user interaction some images do always a good impression. Indeed images express better, in a short amount of time, information. 
 
