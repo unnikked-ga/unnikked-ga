@@ -100,7 +100,7 @@ The example is not the best because I cannot store files on hook.io so I had to 
 ```javascript
 var formData = {
 	chat_id: from,
-    photo: /* put a file handle here */
+    photo: // put a file handle here
 };
 ```
 
@@ -108,7 +108,7 @@ In general when sending a `multipart/form-data`  request you only need to provid
 
 The end result is
 
-![End result](https://lh3.googleusercontent.com/-uZ7tJ0NaaIA/Vy27HnD3QxI/AAAAAAAAAR4/5A2EGKWpY4sCQGd9jM89oqo9nQJwPDEHACLcB/s0/Schermata+del+2016-05-07+11%253A52%253A49.png "Schermata del 2016-05-07 11:52:49.png")
+<p align="center"><img src="https://lh3.googleusercontent.com/-uZ7tJ0NaaIA/Vy27HnD3QxI/AAAAAAAAAR4/5A2EGKWpY4sCQGd9jM89oqo9nQJwPDEHACLcB/s0/Schermata+del+2016-05-07+11%253A52%253A49.png"></p>
 
 To recap the follow to send a file (we understand that it can be a picture, a video etc) is the following:
 
