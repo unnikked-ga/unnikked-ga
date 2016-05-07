@@ -4,7 +4,7 @@ title:      "Handling multimedia files via Telegram Bots API"
 subtitle:   "Because sending text is not enough funny"
 date:       2016-05-07 15:30:00
 author:     "Nicola Malizia"
-tags: ["telegram", "javascript"]
+tags: ["telegram"]
 
 header-img: "data/cover/telegram-background.jpg"
 
