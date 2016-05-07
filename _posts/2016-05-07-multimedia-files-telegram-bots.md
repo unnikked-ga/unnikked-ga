@@ -2,7 +2,7 @@
 layout:     post
 title:      "Handling multimedia files via Telegram Bots API"
 subtitle:   "Because sending text is not enough funny"
-date:       2016-05-07 15:00:00
+date:       2016-05-05 15:00:00
 author:     "Nicola Malizia"
 tags: ["telegram"]
 
