@@ -1,9 +1,8 @@
-
 ---
 layout:     post
 title:      "Handling multimedia files via Telegram Bots API"
 subtitle:   "Because sending text is not enough funny"
-date:       2016-05-07 14:00:00
+date:       2016-05-07 15:40:00
 author:     "Nicola Malizia"
 tags: ["telegram", "javascript"]
 
@@ -14,7 +13,6 @@ twitter-image: "https://lh3.googleusercontent.com/-PNnRNoGFvV4/Vy3wEeDns0I/AAAAA
 
 open-graph: true
 open-graph-image: "https://lh3.googleusercontent.com/-PNnRNoGFvV4/Vy3wEeDns0I/AAAAAAAAASM/-bJh5LZebn8aRAX9n_PemNZNbW8-dlu6gCLcB/s0/handling-multimedia-files-telegram-bot.jpg"
-
 ---
 
 When it comes to user interaction some images do always a good impression. Indeed images express better, in a short amount of time, information. 
