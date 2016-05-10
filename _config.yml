@@ -8,8 +8,6 @@ url: "https://unnikked.ga"
 twitter_username: unnikked
 github_username:  unnikked
 
-
-
 google-analytics: true
 ga-id: "UA-36754539-2"
 
@@ -27,11 +25,12 @@ defaults:
         share_buttons: true
         disqus: true
 
+timezone: Europe/Rome
 
 # Build settings
+gems: [jekyll-paginate]
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-

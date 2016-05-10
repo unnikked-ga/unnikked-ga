@@ -42,7 +42,7 @@ layout: default
                 <hr>
                     {% include share.html %}
                 <hr>
-                    
+
                     <div class="media">
                         <img class="media-object pull-left img-responsive img-thumbnail" src="https://www.gravatar.com/avatar/1d189a7ef418e234bee5b21b11b4a6d4" alt="unnikked">
                         <div class="media-body">
@@ -51,11 +51,11 @@ layout: default
                         </div>
                     </div>
                 <hr>
-                
-                {% include comment.html %}
-                
+                {% if jekyll.environment == "production" %}
+                  {% include comment.html %}
+                {% endif %}
                 <hr>
-                
+
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
@@ -68,7 +68,7 @@ layout: default
                     </li>
                     {% endif %}
                 </ul>
-                
+
             </div>
         </div>
     </div>
