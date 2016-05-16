@@ -454,7 +454,7 @@ This
 
 Becomes
 
-![Example Photo](/data/telegram-channel-scheduler/example-photo.jpg)
+![Example Audio](/data/telegram-channel-scheduler/example-audio.jpg)
 
 ## document
 
