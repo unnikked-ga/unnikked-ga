@@ -8,21 +8,21 @@ tags: ["interpreter", "java"]
 
 
 twitter-card: true
-twitter-image: "data/how-to-build-a-brainfuck-interpreter.png"
+twitter-image: "https://unnikked.ga/data/how-to-build-a-brainfuck-interpreter.png"
 
 open-graph: true
-open-graph-image: "data/how-to-build-a-brainfuck-interpreter.png"
+open-graph-image: "https://unnikked.ga/data/how-to-build-a-brainfuck-interpreter.png"
 ---
 
 I've always wondered when I started to approach programming when I was younger how a programming language could drive a computer.
 
 No matter if the language is Java, C, Python, PHP or other, I've always been fascinated the way a simple text file could produce the desired output almost magically - it's like transferring your thoughts.  
 
-Some programming languages are easy to be used, some of them are a sort of natural language. There are others, instead, that despite the fact having the same power as a high level language they are very difficult to be used in practice, one of them is Brainfuck. 
+Some programming languages are easy to be used, some of them are a sort of natural language. There are others, instead, that despite the fact having the same power as a high level language they are very difficult to be used in practice, one of them is Brainfuck.
 
-Brainfuck it was designed by Urban Müller in 1993 with the aim to be a programming language suitable for a Turing Machine using the smallest possible compiler. 
+Brainfuck it was designed by Urban Müller in 1993 with the aim to be a programming language suitable for a Turing Machine using the smallest possible compiler.
 
-This language comprehend of only eight elementary instruction, two of them are user for basic I/O. 
+This language comprehend of only eight elementary instruction, two of them are user for basic I/O.
 
 <table>
 <thead>
@@ -65,7 +65,7 @@ This language comprehend of only eight elementary instruction, two of them are u
 </tr>
 </tbody></table>
 
-From the specification of the language, an interpreter for it pretty straightforward. This code should be self explanatory. 
+From the specification of the language, an interpreter for it pretty straightforward. This code should be self explanatory.
 
 ```java
 import java.util.*;
@@ -74,7 +74,7 @@ public class Brainfuck {
     private final int LENGTH = 65535;
     private byte[] mem = new byte[LENGTH];
     private int dataPointer;
- 
+
     public void interpret(String code) {
         int l = 0;
         for(int i = 0; i < code.length(); i++) {
@@ -112,7 +112,7 @@ public class Brainfuck {
             }
         }
     }
- 
+
     public static void main(String[] args) {
         new Brainfuck().interpret(args[0]);
     }
@@ -128,7 +128,7 @@ Every time we encounter `[` we need to perform a "jump" (i.e we enter in a loop)
 ## From Brainfuck to Java
 Also translating a Brainfuck source code to a Java source code is pretty straightforward.
 
-Each Brainfuck instruction can be directly translated in an instruction of a high level language such Java following this schema: 
+Each Brainfuck instruction can be directly translated in an instruction of a high level language such Java following this schema:
 
 <table>
 <thead>
@@ -171,13 +171,13 @@ Each Brainfuck instruction can be directly translated in an instruction of a hig
 </tr>
 </tbody></table>
 
-Also in this case the code is simple: 
+Also in this case the code is simple:
 
 ```java
 public class BrainfuckToJava {
 	private StringBuilder source;
 	private int ident;
-	
+
 	public BrainfuckToJava(String code) {
 		source = new StringBuilder();
 		source.append("import java.util.Scanner;\n");
@@ -191,7 +191,7 @@ public class BrainfuckToJava {
 		source.append("}\n");
 		System.out.println(source.toString());
 	}
-	
+
 	private void convert(String code, StringBuilder source) {
 		for(int i = 0; i < code.length(); i++) {
 			for(int t = 0; t < ident; t++) source.append('\t');
@@ -209,17 +209,17 @@ public class BrainfuckToJava {
 			if(i+1 < code.length() && code.charAt(i+1) == ']') ident--;
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		new BrainfuckToJava(args[0]);
 	}
 }
 ```
 
-Please note that the Java Virtual Machine does not allow methods with [segment code that are more than 64KB](http://stackoverflow.com/questions/2407912/code-too-large-compilation-error-in-java/2408005#2408005), therefore there may be some Brainfuck programs that cannot be executed in a single Java method. 
+Please note that the Java Virtual Machine does not allow methods with [segment code that are more than 64KB](http://stackoverflow.com/questions/2407912/code-too-large-compilation-error-in-java/2408005#2408005), therefore there may be some Brainfuck programs that cannot be executed in a single Java method.
 
 ### Test the interpeter
-If you want to test this code you may download the source code from [here](https://gist.github.com/unnikked/cfad836abd9e4619a1b1). If you are on a Linux machine after compiled the code you can execute it by typing: 
+If you want to test this code you may download the source code from [here](https://gist.github.com/unnikked/cfad836abd9e4619a1b1). If you are on a Linux machine after compiled the code you can execute it by typing:
 
 ```
 java Brainfuck "$(cat source.bf)"
@@ -229,4 +229,4 @@ Where `source.bf` is a valid Brainfuck program.
 
 ## Conclusions
 
-If you want to go deep about Branfuck I suggest to read this [doc](https://docs.google.com/document/d/1M51AYmDR1Q9UBsoTrGysvuzar2_Hx69Hz14tsQXWV6M/edit). It contains also external resources, sample programs etc. 
+If you want to go deep about Branfuck I suggest to read this [doc](https://docs.google.com/document/d/1M51AYmDR1Q9UBsoTrGysvuzar2_Hx69Hz14tsQXWV6M/edit). It contains also external resources, sample programs etc.

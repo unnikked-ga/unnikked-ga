@@ -7,23 +7,23 @@ author:     "Nicola Malizia"
 tags: ["java", "compiler"]
 
 twitter-card: true
-twitter-image: "data/compiling-a-boolean-expression.png"
+twitter-image: "https://unnikked.ga/data/compiling-a-boolean-expression.png"
 
 open-graph: true
-open-graph-image: "data/compiling-a-boolean-expression.png"
+open-graph-image: "https://unnikked.ga/data/compiling-a-boolean-expression.png"
 ---
 
-Recently I have posted an article about [evaluating a boolean expression](how-to-evaluate-a-boolean-expression) using the Interpreter pattern. 
+Recently I have posted an article about [evaluating a boolean expression](how-to-evaluate-a-boolean-expression) using the Interpreter pattern.
 
-I've also written about how to implement a [simple stack machine](how-to-build-simple-stack-virtual-machine). 
+I've also written about how to implement a [simple stack machine](how-to-build-simple-stack-virtual-machine).
 
-In this blog post I want to combine those two article and to show you how to [compile](http://en.wikipedia.org/wiki/Compiler) a boolean expression for a [stack based virtual machine](http://en.wikipedia.org/wiki/Stack_machine). 
+In this blog post I want to combine those two article and to show you how to [compile](http://en.wikipedia.org/wiki/Compiler) a boolean expression for a [stack based virtual machine](http://en.wikipedia.org/wiki/Stack_machine).
 
 The task itself it is not a big deal but I hope that I can show you how powerful yet a [stack machine](http://en.wikipedia.org/wiki/Stack_machine) can be: a simple concept, a simple implementation, a great power!
 
 ## Instruction Set
 
-This tiny virtual machine has a small instruction set just to support a boolean expression. 
+This tiny virtual machine has a small instruction set just to support a boolean expression.
 
 - `PUSH` push a value onto the stack
 - `AND` performs AND logic operation by popping two operands from the stack
@@ -46,9 +46,9 @@ public class Bool {
 }
 ```
 
-The generated code from the "compiler" is an array of integer `Integer[]`, that way the generated code looks like how a real compiler compiles a programming language. 
+The generated code from the "compiler" is an array of integer `Integer[]`, that way the generated code looks like how a real compiler compiles a programming language.
 
-Here it is the virtual machine implemented: 
+Here it is the virtual machine implemented:
 
 ```java
 public final class BooleanVM {
@@ -85,41 +85,41 @@ public final class BooleanVM {
 }
 ```
 
-The code inside `boolean start(...)` describe the `fetch-decode-execute` cycle that every real CPU performs. 
+The code inside `boolean start(...)` describe the `fetch-decode-execute` cycle that every real CPU performs.
 
-The `fetch` stage is performed by `opcode = code[ip++];` followed by a `decode` stage performed by the `switch` statement and the actual `execution` is performed by the body of the `case` statement. 
+The `fetch` stage is performed by `opcode = code[ip++];` followed by a `decode` stage performed by the `switch` statement and the actual `execution` is performed by the body of the `case` statement.
 
-Once the compile expression is evaluated the result is stored on top of the stack, returning the top of the stack we retrieve the result of the evaluated expression. 
+Once the compile expression is evaluated the result is stored on top of the stack, returning the top of the stack we retrieve the result of the evaluated expression.
 
-Since this virtual machine uses Integer the logic operation must be done using bit-wise operations (this architecture does not know what a boolean is). 
+Since this virtual machine uses Integer the logic operation must be done using bit-wise operations (this architecture does not know what a boolean is).
 
-`AND` and `OR` operation are done by using `&` and `|` bit-wise operators respectively. 
+`AND` and `OR` operation are done by using `&` and `|` bit-wise operators respectively.
 
-Since we are using Java `Integer`s a `NOT` operation on `0` can lead to some unexpected results. 
+Since we are using Java `Integer`s a `NOT` operation on `0` can lead to some unexpected results.
 
-Java Integers are 32 bit wide in the `JVM`, by performing `~0`we will not have `1` in returns but instead `-1`. 
+Java Integers are 32 bit wide in the `JVM`, by performing `~0`we will not have `1` in returns but instead `-1`.
 
-0 in binary is `00...00` (32 zeroes), applying the `~` operator we obtain `11...11` (32 ones) which is `-1` (Java uses [two's complement](http://en.wikipedia.org/wiki/Two%27s_complement)). 
+0 in binary is `00...00` (32 zeroes), applying the `~` operator we obtain `11...11` (32 ones) which is `-1` (Java uses [two's complement](http://en.wikipedia.org/wiki/Two%27s_complement)).
 
 By applying `& 0x01`to the result we are sure that we will retrieve only the last bit of the `Integer`.
 
 ## Compiling
 
-What means [compiling](http://en.wikipedia.org/wiki/Compiler) ? Basically (very very basically) it means to translate a well defined way to express operations into another well defined way to express operations. 
+What means [compiling](http://en.wikipedia.org/wiki/Compiler) ? Basically (very very basically) it means to translate a well defined way to express operations into another well defined way to express operations.
 
-As you may noticed a computer architecture, in general, has no notion what a `boolean` is, what a `while` statemens is, what a `class` is and so on. 
+As you may noticed a computer architecture, in general, has no notion what a `boolean` is, what a `while` statemens is, what a `class` is and so on.
 
-A compiler fill this gaps by translating a high level language to a low level language, which is the instruction set. 
+A compiler fill this gaps by translating a high level language to a low level language, which is the instruction set.
 
-In our case the "high level" language is a boolean expression and the "low level" language is the instruction set described above. 
+In our case the "high level" language is a boolean expression and the "low level" language is the instruction set described above.
 
-I started from utilizing again the classes coded for the previous article about [evaluating a boolean expression](how-to-evaluate-a-boolean-expression). 
+I started from utilizing again the classes coded for the previous article about [evaluating a boolean expression](how-to-evaluate-a-boolean-expression).
 
 ### Compiling by visiting
 
-A common technique to implement a compiler is to [visit](http://en.wikipedia.org/wiki/Visitor_pattern) the [Abstract Syntax Tree](http://en.wikipedia.org/wiki/Abstract_syntax_tree) and generate the machine level code (binary code or byte code or whatever you want). 
+A common technique to implement a compiler is to [visit](http://en.wikipedia.org/wiki/Visitor_pattern) the [Abstract Syntax Tree](http://en.wikipedia.org/wiki/Abstract_syntax_tree) and generate the machine level code (binary code or byte code or whatever you want).
 
-The process of parsing and building the AST is the same used in the [other article](how-to-evaluate-a-boolean-expression). 
+The process of parsing and building the AST is the same used in the [other article](how-to-evaluate-a-boolean-expression).
 
 ```java
 public interface BooleanVisitor<T> {
@@ -135,13 +135,13 @@ public interface BooleanVisitor<T> {
 }
 ```
 
-This interface is generic because in this way you can traverse and performs any operation on the generated AST. 
+This interface is generic because in this way you can traverse and performs any operation on the generated AST.
 
-Indeed according to Wikipedia: 
+Indeed according to Wikipedia:
 
 > [..] the [visitor design pattern](http://en.wikipedia.org/wiki/Visitor_pattern) is a way of separating an algorithm from an object structure on which it operates. [...]
 
-I had to modify the `BooleanExpression` interface accordingly: 
+I had to modify the `BooleanExpression` interface accordingly:
 
 ```java
 public interface BooleanExpression {
@@ -149,10 +149,10 @@ public interface BooleanExpression {
 }
 ```
 
-Now the [Interpreter Pattern](http://en.wikipedia.org/wiki/Interpreter_pattern) is used to apply the Visitor recursively on the AST. 
+Now the [Interpreter Pattern](http://en.wikipedia.org/wiki/Interpreter_pattern) is used to apply the Visitor recursively on the AST.
 
 ### Actual compiling
-Usually in order to generate code for a stack based machine it is sufficient to visit in post-order the AST. 
+Usually in order to generate code for a stack based machine it is sufficient to visit in post-order the AST.
 
 ```java
 public class BooleanCompiler implements BooleanVisitor<Void>{
@@ -210,11 +210,11 @@ public class BooleanCompiler implements BooleanVisitor<Void>{
 }
 ```
 
-Since we only need to traverse the tree data structure and `emit` the proper opcode the return type of the visitor is `Void`. 
+Since we only need to traverse the tree data structure and `emit` the proper opcode the return type of the visitor is `Void`.
 
-If we wanted to evaluate the expression instead of compiling it (like [the famous article](how-to-evaluate-a-boolean-expression)) we could have done instead. 
+If we wanted to evaluate the expression instead of compiling it (like [the famous article](how-to-evaluate-a-boolean-expression)) we could have done instead.
 
-```java 
+```java
 public class BooleanEvaluator implements BooleanVisitor<Boolean>{
 	@Override
 	public Boolean visit(And a) {
@@ -246,9 +246,9 @@ public class BooleanEvaluator implements BooleanVisitor<Boolean>{
 	}
 }
 ```
-Note that the evaluation is still performed in a in-order traversal as described in the last article about boolean expression. 
+Note that the evaluation is still performed in a in-order traversal as described in the last article about boolean expression.
 
-Generating the Assembler code for the VM (parsing of this code is not supported in this project) is also trivial: 
+Generating the Assembler code for the VM (parsing of this code is not supported in this project) is also trivial:
 
 ```java
 public class ToAssembly implements BooleanVisitor<Void> {
@@ -331,4 +331,4 @@ AND
 AND
 ```
 
-If you want to check out the code it is hosted on [GitHub](https://github.com/unnikked-ga/booleancompliler). 
+If you want to check out the code it is hosted on [GitHub](https://github.com/unnikked-ga/booleancompliler).

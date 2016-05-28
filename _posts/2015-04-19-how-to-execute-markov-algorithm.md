@@ -7,10 +7,10 @@ author:     "Nicola Malizia"
 tags: ["algorithms", "php"]
 
 twitter-card: true
-twitter-image: "data/markov-algorithm.png"
+twitter-image: "https://unnikked.ga/data/markov-algorithm.png"
 
 open-graph: true
-open-graph-image: "data/markov-algorithm.png"
+open-graph-image: "https://unnikked.ga/data/markov-algorithm.png"
 ---
 
 A Markov algorithm is a [string rewriting](http://en.wikipedia.org/wiki/Semi-Thue_system) system that uses grammar-like rules to operate on strings of symbols. Markov algorithms have been shown to be [Turing-complete](http://en.wikipedia.org/wiki/Turing_complete), which means that they are suitable as a general model of computation and can represent any mathematical expression from its simple notation.<sup>[*](http://en.wikipedia.org/wiki/Markov_algorithm)</sup>
@@ -32,7 +32,7 @@ Given an input string:
 Note that after each rule application the search starts over from the first rule.
 
 <h2>The implementation</h2>
-Implementing this algorithm in PHP is simple, the use of [`preg_match`](http://php.net/manual/en/function.preg-match.php) and [`preg_replace`](http://php.net/manual/en/function.preg-replace.php) will help us. So let's take a look to the implementation: 
+Implementing this algorithm in PHP is simple, the use of [`preg_match`](http://php.net/manual/en/function.preg-match.php) and [`preg_replace`](http://php.net/manual/en/function.preg-replace.php) will help us. So let's take a look to the implementation:
 
 ```php
 <?php
@@ -50,16 +50,16 @@ while(true) {
             break;
         }
     }
-    
+
     if(!$run) {
         break;
     }
 }
 ```
 
-We need to iterate on the `$input` over and over again until no rules can be applied. 
+We need to iterate on the `$input` over and over again until no rules can be applied.
 
-Since we need to apply the first matches of a rule at the leftmost occurrence we limit the `preg_match` function at `1` and we break the for each loop. 
+Since we need to apply the first matches of a rule at the leftmost occurrence we limit the `preg_match` function at `1` and we break the for each loop.
 
 At the end of all replacements `$run` will be `false`, hence we `break` also the endless loop.
 
@@ -68,7 +68,7 @@ At the end of all replacements `$run` will be `false`, hence we `break` also the
 I found on Internet some interesting rules that I would like to share with you and helped me test my implementation.  
 
 <h3>Binary to unary</h3>
-These rules converts a binary representation of a number into it's unary counterparts. 
+These rules converts a binary representation of a number into it's unary counterparts.
 
 For example `101` (`5`) becomes `|||||`
 

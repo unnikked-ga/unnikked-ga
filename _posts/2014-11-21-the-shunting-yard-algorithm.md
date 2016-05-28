@@ -8,13 +8,13 @@ tags: ["algorithms", "java"]
 
 
 twitter-card: true
-twitter-image: "data/the-shunting-yard-algorithm.png"
+twitter-image: "https://unnikked.ga/data/the-shunting-yard-algorithm.png"
 
 open-graph: true
-open-graph-image: "data/the-shunting-yard-algorithm.png"
+open-graph-image: "https://unnikked.ga/data/the-shunting-yard-algorithm.png"
 ---
 
-In the last article I introduced the stack data structure. I've also provided a flow chart of a RPN expression evaluation. 
+In the last article I introduced the stack data structure. I've also provided a flow chart of a RPN expression evaluation.
 
 In this article we will see how to convert an infix notation into a postfix notation programmatically using the Djkstra's Shunting Yard algorithm.
 
@@ -22,7 +22,7 @@ Just as a recap, we are used to write math expression like `4+5* (5+2)`.
 
 Using the Shunting Yard algorithm we will be able to convert this infix notation into the post fix notation `4 5 5 2 + * +`.
 
-The Wikipedia page described very well this algorithm in a sort of pseudo-code so we will base on it, for who wants to go deepen you can read the [original paper](http://www.cs.utexas.edu/~EWD/MCReps/MR35.PDF) of Dijkstra. 
+The Wikipedia page described very well this algorithm in a sort of pseudo-code so we will base on it, for who wants to go deepen you can read the [original paper](http://www.cs.utexas.edu/~EWD/MCReps/MR35.PDF) of Dijkstra.
 
 ## The algorithm
 
@@ -47,16 +47,16 @@ The Wikipedia page described very well this algorithm in a sort of pseudo-code s
 		- Pop the operator onto the output queue.
 - Exit.
 
-A simple execution of this algorithm we can see through this image 
+A simple execution of this algorithm we can see through this image
 
 <p align="center"><img class="img-thumbnail" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Shunting_yard.svg/628px-Shunting_yard.svg.png"></p>
 *(Image courtesy of Wikipedia)*
 
 ## Implementation
 
-I've implemented this algorithm in Java, and I added also a Lexer and a simple RPN evaluator to actually evaluate the parsed expression. 
+I've implemented this algorithm in Java, and I added also a Lexer and a simple RPN evaluator to actually evaluate the parsed expression.
 
-The Lexer class do all the dirty work about lexing the given input string. 
+The Lexer class do all the dirty work about lexing the given input string.
 
 As a example the string `2+3.2*(3-3)+sin(3)-ack(4,3)` will be lexed as:
 
@@ -84,7 +84,7 @@ As a example the string `2+3.2*(3-3)+sin(3)-ack(4,3)` will be lexed as:
 8 )
 ```
 
-According to an inner table of symbols. The method `nextSymbol` of the class `Lexer` identifies the type of symbol analyzed through input. 
+According to an inner table of symbols. The method `nextSymbol` of the class `Lexer` identifies the type of symbol analyzed through input.
 
 ```java
 public int nextSymbol() {
@@ -125,7 +125,7 @@ public final DoubleHashMap<String, Integer> mnemonics = new DoubleHashMap<String
 	\}\};
 ```
 
-The `ShuntingYardAlgorithm` class is pretty straightforward, it is just the implementation of the pseudo-code stated above. 
+The `ShuntingYardAlgorithm` class is pretty straightforward, it is just the implementation of the pseudo-code stated above.
 
 ```java
 public String evaluate() {
@@ -182,7 +182,7 @@ public String evaluate() {
     }
 ```
 
-Last but not least, the `ReversePolishEvaluator` class which evaluate the "bytecode" of the parsed input string. 
+Last but not least, the `ReversePolishEvaluator` class which evaluate the "bytecode" of the parsed input string.
 
 ```java
 public Double evaluate() {
@@ -247,7 +247,7 @@ public Double evaluate() {
     }
 ```
 
-Since the parser algorithm is not capable of determine if the minus `-` operator is unary or binary you have may noticed that I added the control to determine if it is an unary or binary operator. 
+Since the parser algorithm is not capable of determine if the minus `-` operator is unary or binary you have may noticed that I added the control to determine if it is an unary or binary operator.
 
 ```java
 secondOperand = cast(stack.pop());
@@ -259,7 +259,7 @@ if(stack.peek() != null && isNumber(stack.peek())) { // unary minus
 }
 ```
 
-For testing purpose I've added 6 builtin function: `sin`, `cos`, `atan`, `ln`, `exp`, `ack`. 
+For testing purpose I've added 6 builtin function: `sin`, `cos`, `atan`, `ln`, `exp`, `ack`.
 
 For example if you want to compute the `pi` number you could write as input:
 
@@ -279,9 +279,9 @@ If you want to combine more than two builin function I recommend to parentheses 
 (sin(0.71))^2+(cos(0.71))^2
 ```
 
-If you want to checkout the code and test it to yourself you can also clone the github repository. 
+If you want to checkout the code and test it to yourself you can also clone the github repository.
 
-Clone the repository with: 
+Clone the repository with:
 
 ```
 git clone https://github.com/unnikked/ExpressionEvaluator.git
@@ -293,7 +293,7 @@ Compile:
 javac src/ga/unnikked/expressionevaluator/*.java src/ga/unnikked/expressionevaluator/*/*.java
 ```
 
-And execute it with (remember to `cd src`): 
+And execute it with (remember to `cd src`):
 
 ```
 java ga/unnikked/expressionevaluator/Main
@@ -310,6 +310,6 @@ Here an execution example:
 ```
 $ cat test | java ga.unnikked.expressionevaluator.Main -f
 4*atan(1)
-4 1 atan * 
+4 1 atan *
 3.141592653589793
 ```
