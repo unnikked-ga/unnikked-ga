@@ -166,10 +166,10 @@ Happy Laravel!
 
 Well if you read till here you already noted that I tried to use a funny language here. I'm aware that this is just playing and you will not get nothing productive out of it (do you?).
 
-It is in my nature to explore new things and try to push what I have in my hands to the extreme. This is what I like from technology, the possibilites that it opens to you, even if it silly or not useful at all.
+It is in my nature to explore new things and try to push what I have in my hands to the extreme. This is what I like from technology, the possibilities that it opens, even if it silly or not useful at all.
 
 Seeing that a little box that holds in your pocket is capable of doing complex stuff like this it just lights me up.
 
-I don't know if this article will be valuable to you but I hope you enjoyed my journey while reading it.
+I don't know if this article will be valuable to you but I hope you enjoyed the journey while reading.
 
-Have you suggestions? Wanna whare your story with termux? Drop a comment below or join [my group on Telegram](https://telegram.me/joinchat/AEis8D1UWPDa9sdeyzJQ6w).
+Have suggestions? Wanna share your story with termux? Drop a comment below or join [my group on Telegram](https://telegram.me/joinchat/AEis8D1UWPDa9sdeyzJQ6w).
