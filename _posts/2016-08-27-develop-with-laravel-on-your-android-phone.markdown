@@ -7,10 +7,10 @@ author:     "Nicola Malizia"
 tags: ["android", "php"]
 
 twitter-card: true
-twitter-image: "https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/social-cover.jpg"
+twitter-image: "https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/social-cover.png"
 
 open-graph: true
-open-graph-image: "https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/social-cover.jpg"
+open-graph-image: "https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/social-cover.png"
 ---
 
 Have you an old smartphone that is laying around and you don't know what to do with ? I know that feel!
