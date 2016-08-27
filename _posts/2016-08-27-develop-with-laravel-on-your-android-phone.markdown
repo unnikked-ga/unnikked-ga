@@ -141,7 +141,7 @@ Now remember the local ip of you phone and `serve` it on this address.
 php artisan serve --host=192.168.0.103
 ```
 
-> Please note that `192.168.0.103` vary depending on your network connection. No copy paste here allowed :)
+> Please note that `192.168.0.103` vary depending on your network connection. No copy paste allowed here :)
 
 ![It works](/data/develop-with-laravel-on-your-android-phone/it-works-on-desktop.png)
 
