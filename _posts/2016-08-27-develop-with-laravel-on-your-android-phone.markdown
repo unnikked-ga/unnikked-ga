@@ -60,7 +60,7 @@ We can try if it works by running `php composer.phar`
 
 ## Installing Laravel
 
-I don't like to write the obvious an waste your time so here the command.
+I don't like to write the obvious and waste your time so here the command.
 
 ```
 php composer.phar create-project --prefer-dist laravel/laravel blog
