@@ -2,7 +2,7 @@
 layout: post
 title: "Develop With Laravel On Your Android Phone"
 date: "2016-08-27 15:08:27 +0200"
-subtitle:   "Seriusly? Why? Because I can."
+subtitle:   "Seriously? Why? Because I can."
 author:     "Nicola Malizia"
 tags: ["android", "php"]
 
