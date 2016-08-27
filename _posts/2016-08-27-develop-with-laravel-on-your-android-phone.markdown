@@ -145,7 +145,7 @@ php artisan serve --host=192.168.0.103
 
 ![It works](/data/develop-with-laravel-on-your-android-phone/it-works-on-desktop.png)
 
-## Hehe I have an ever trickier question? I want to expose it on the internet, I bet you can't do it.
+## Hehe I have an ever trickier question. I want to expose it on the internet, I bet you can't do it!
 
 Oh my fried, of course you can do it. Do you know that exist a service called [ngrok](https://ngrok.com/)?
 
