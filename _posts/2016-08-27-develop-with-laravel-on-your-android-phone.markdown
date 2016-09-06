@@ -147,7 +147,7 @@ php artisan serve --host=192.168.0.103
 
 ## Hehe I have an ever trickier question. I want to expose it on the internet, I bet you can't do it!
 
-Oh my fried, of course you can do it. Do you know that exist a service called [ngrok](https://ngrok.com/)?
+Oh my friend, of course you can do it. Do you know that exist a service called [ngrok](https://ngrok.com/)?
 
 > **Secure tunnels to localhost**
 ”I want to expose a local server behind a NAT or firewall to the internet.”
