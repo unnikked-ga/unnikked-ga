@@ -21,7 +21,7 @@ On a moment of laziness I discovered [Termux](https://termux.com) and an idea sp
 
 I want to use my old smartphone as a web server for Laravel!
 
-![Shut up and install laravel](/data/develop-with-laravel-on-your-android-phone/shut-up-install-laravel.jpg)
+![Shut up and install laravel](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/shut-up-install-laravel.jpg)
 
 ## Installing packages
 
@@ -41,7 +41,7 @@ To install sqlite (so we can test if migrations works)
 apt install sqlite
 ```
 
-![apt install sqlite](/data/develop-with-laravel-on-your-android-phone/apt-install-sqlite.jpg)
+![apt install sqlite](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/apt-install-sqlite.jpg)
 
 ## Let's compose an application
 
@@ -56,7 +56,7 @@ php -r "unlink('composer-setup.php');"
 
 We can try if it works by running `php composer.phar`
 
-![Composer](/data/develop-with-laravel-on-your-android-phone/composer.jpg)
+![Composer](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/composer.jpg)
 
 ## Installing Laravel
 
@@ -67,7 +67,7 @@ php composer.phar create-project --prefer-dist laravel/laravel blog
 ```
 It will take some time.
 
-![Install Laravel](/data/develop-with-laravel-on-your-android-phone/install-laravel.jpg)
+![Install Laravel](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/install-laravel.jpg)
 
 ## Checking everything is working
 
@@ -77,9 +77,9 @@ So let's face the thruth and see if everything works. First `cd blog` and then u
 php artisan serve
 ```
 
-![It works](/data/develop-with-laravel-on-your-android-phone/it-works.jpg)
+![It works](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/it-works.jpg)
 
-<p align="center"><img src="/data/develop-with-laravel-on-your-android-phone/it-works-obama.jpg"></p>
+<p align="center"><img src="https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/it-works-obama.jpg"></p>
 
 ## What about migrations ?
 
@@ -91,7 +91,7 @@ First of all edit `.env` file as follow.
 vim .env
 ```
 
-![Database Connection](/data/develop-with-laravel-on-your-android-phone/db-connection.jpg)
+![Database Connection](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/db-connection.jpg)
 
 
 > **Don't you have `vim`?** Don't worry. Run `apt install vim` and you are ready to go.
@@ -115,14 +115,14 @@ And now we can migrate!
 php artisan migrate
 ```
 
-![Migrate](/data/develop-with-laravel-on-your-android-phone/migrate.jpg)
+![Migrate](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/migrate.jpg)
 
-<p align="center"><img src="/data/develop-with-laravel-on-your-android-phone/migrations.jpg"></p>
+<p align="center"><img src="https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/migrations.jpg"></p>
 
 
 Once we `php artisan serve` again we can see the registration form in all it's beauty.
 
-![Register](/data/develop-with-laravel-on-your-android-phone/register.jpg)
+![Register](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/register.jpg)
 
 ## Wait old boy I wanna access it from my desktop
 
@@ -133,7 +133,7 @@ First of all get your phone local ip through the old and fashion
 ```
 ifconfig
 ```
-![ifconfig](/data/develop-with-laravel-on-your-android-phone/ifconfig.jpg)
+![ifconfig](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/ifconfig.jpg)
 
 Now remember the local ip of you phone and `serve` it on this address.
 
@@ -143,7 +143,7 @@ php artisan serve --host=192.168.0.103
 
 > Please note that `192.168.0.103` vary depending on your network connection. No copy paste allowed here :)
 
-![It works](/data/develop-with-laravel-on-your-android-phone/it-works-on-desktop.png)
+![It works](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/it-works-on-desktop.png)
 
 ## Hehe I have an ever trickier question. I want to expose it on the internet, I bet you can't do it!
 
@@ -158,7 +158,7 @@ Once you have installed ngrok on you local machine (not your phone) you can run.
 ngrok http 192.168.0.103:8000
 ```
 
-![Ngrok](/data/develop-with-laravel-on-your-android-phone/ngrok.png)
+![Ngrok](https://unnikked.ga/data/develop-with-laravel-on-your-android-phone/ngrok.png)
 
 Happy Laravel!
 
