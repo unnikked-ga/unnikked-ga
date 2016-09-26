@@ -195,11 +195,11 @@ The idea is to use a node called `top` that represents the top of the stack. We 
 
 A representation of a push:
 
-<p align="center"><img src="/data/stack-push.png" class="img-thumbnail"></p>
+<p align="center"><img src="https://unnikked.ga/data/stack-push.png" class="img-thumbnail"></p>
 
 A representation of a pop:
 
-<p align="center"><img src="/data/stack-pop.png" class="img-thumbnail"></p>
+<p align="center"><img src="https://unnikked.ga/data/stack-pop.png" class="img-thumbnail"></p>
 
 ```java
 public class LinkedStack<E> implements Stack<E> {
