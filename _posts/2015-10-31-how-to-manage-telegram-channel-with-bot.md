@@ -36,15 +36,15 @@ The idea behind this is to use you Google Calendar to schedule the post you want
 
 The process it's simple, you first need to go to your info channel and click on `Administrators`
 
-![Telegram Channel Info](/data/telegram-channel-info.jpg)
+![Telegram Channel Info](https://unnikked.ga/data/telegram-channel-info.jpg)
 
 You will see the administrator list
 
-![Telegram Channel Admin List](/data/telegram-channel-admin-list.jpg)
+![Telegram Channel Admin List](https://unnikked.ga/data/telegram-channel-admin-list.jpg)
 
 By clicking on `Add administrator` you will be prompt with a search section, search your bot by using the format `@yourbotname`
 
-![Telegram Channel Add Bot](/data/telegram-channel-add-bot.jpg)
+![Telegram Channel Add Bot](https://unnikked.ga/data/telegram-channel-add-bot.jpg)
 
 > This process is made on the official Android client, the process may vary if you use an alternative client
 
@@ -56,7 +56,7 @@ Click on `Add` here below.
 
 You will see a dialog box like below (you may be asked to activate some channel first).
 
-![Telegram Channel IFTTT Recipe](/data/telegram-channel-ifttt-recipe.png)
+![Telegram Channel IFTTT Recipe](https://unnikked.ga/data/telegram-channel-ifttt-recipe.png)
 
 Where the customizable field means:
 
@@ -69,7 +69,7 @@ Where the customizable field means:
 
 Now you simply need to log in to your Google Calendar and create a new event!
 
-![Telegram Channel Google Calendar](/data/telegram-channel-google-calendar.png)
+![Telegram Channel Google Calendar](https://unnikked.ga/data/telegram-channel-google-calendar.png)
 
 In the `description` box you will put your content.
 
