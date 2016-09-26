@@ -60,7 +60,7 @@ That means that It parses the input from Left to right, performing [Leftmost der
 
 From now on we are going to build our boolean expression evaluator following this scheme:
 
-<p align="center"><img class="img-responsive" src="/data/lexer-parser-interpreter.png" alt="lexer-parser-interpreter"></p>
+<p align="center"><img class="img-responsive" src="https://unnikked.ga/data/lexer-parser-interpreter.png" alt="lexer-parser-interpreter"></p>
 
 ## Building the Lexer
 A [Lexer](http://en.wikipedia.org/wiki/Lexical_analysis) is a component that performs the Lexical Analysis of a source code program, it tokenize the input and provide a stream of tokens that will be consumed by the parser.
@@ -232,7 +232,7 @@ The `RecursiveDescentParser` class returns an instance of `BooleanExpression` cl
 
 The AST follow the interpreter pattern principle and can be schematized as the image:
 
-<p align="center"><img class="img-responsive" src="/data/interpreter-pattern.png" alt="Interpreter Pattern"></p>
+<p align="center"><img class="img-responsive" src="https://unnikked.ga/data/interpreter-pattern.png" alt="Interpreter Pattern"></p>
 
 `BooleanExpression` is an interface that export the method `interpret()`:
 
@@ -335,7 +335,7 @@ Token[')'], line 1 -> 7
 
 The the parser builds an Abstract Syntaxt Tree as follow:
 
-<p align="center"><img class="img-responsive" src="/data/ast-boolean-expression.png" alt="Abstract Syntax Tree For The Boolean Expression"></p>
+<p align="center"><img class="img-responsive" src="https://unnikked.ga/data/ast-boolean-expression.png" alt="Abstract Syntax Tree For The Boolean Expression"></p>
 
 Or according to the `toString()` method would look like:
 
