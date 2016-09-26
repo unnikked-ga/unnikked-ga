@@ -50,7 +50,7 @@ I hope you don't need instructions on how to register accounts on Google, IFTTT 
 
 The first step is to create a [new service on hook](https://hook.io/new) that handles the request received from IFTTT triggered by Google Calendar events.
 
-![Create a new Service](/data/telegram-channel-scheduler/hook-io-create-new-service.png)
+![Create a new Service](https://unnikked.ga/data/telegram-channel-scheduler/hook-io-create-new-service.png)
 
 Where:
 
@@ -61,7 +61,7 @@ Where:
 
 Hook source is the source code of our microservice.
 
-![Hook source](/data/telegram-channel-scheduler/hook-io-hook-source.png)
+![Hook source](https://unnikked.ga/data/telegram-channel-scheduler/hook-io-hook-source.png)
 
 Where:
 
@@ -71,13 +71,13 @@ Hit the **Create new service** button.
 
 It's important that you set the service into _production_ mode so it can perform faster. To do it you have to go to the service control panel and set it to production.
 
-![Hook production](/data/telegram-channel-scheduler/hook-io-set-production.png)
+![Hook production](https://unnikked.ga/data/telegram-channel-scheduler/hook-io-set-production.png)
 
-It's also important to set the environment variable `bot_scheduler_token` to the bot token that you get from talking with [@botfather](/getting-started-with-telegram-bots/)
+It's also important to set the environment variable `bot_scheduler_token` to the bot token that you get from talking with [@botfather](https://unnikked.ga/getting-started-with-telegram-bots/)
 
 Just go to the [environment section](https://hook.io/env) and set the token.
 
-![Hook env](/data/telegram-channel-scheduler/hook-io-set-evn.png)
+![Hook env](https://unnikked.ga/data/telegram-channel-scheduler/hook-io-set-evn.png)
 
 # Step 2 - Adding the custom IFTTT recipe
 
@@ -88,7 +88,7 @@ Lucky for you I've already made a recipe that it is ready to go.
 
 Click on the **Add** button and follow the rest of this blog post.
 
-![Add Recipe](/data/telegram-channel-scheduler/ifttt-add-recipe.png)
+![Add Recipe](https://unnikked.ga/data/telegram-channel-scheduler/ifttt-add-recipe.png)
 
 You'll see this bit of page, paste here the URL generated from Step 1 at `Double attention here`.
 
@@ -98,7 +98,7 @@ If you believe or not you are good to go! Don't worry I got you covered and you 
 
 # How to use
 
-If you read my [previous blog post](/how-to-manage-telegram-channel-with-bot/) you already know that the content has to be written in the description box of the event. Nothing changed except.
+If you read my [previous blog post](https://unnikked.ga/how-to-manage-telegram-channel-with-bot/) you already know that the content has to be written in the description box of the event. Nothing changed except.
 
 - The **title** of the event must contains the word `#scheduler`.
 - The **description** of the event must be a JSON string.
@@ -123,7 +123,7 @@ The JSON string must be of the form:
 
 You will add entries as follow
 
-![Google Calendar Entry](/data/telegram-channel-scheduler/google-calendar-entry.png)
+![Google Calendar Entry](https://unnikked.ga/data/telegram-channel-scheduler/google-calendar-entry.png)
 
 Where `type` can be one of the following: `message`, `audio`, `document`, `sticker`, `video`, `location`, `venue`, `contact`.
 And `data` depends by the specific `type`, follow the documentation below.
@@ -454,7 +454,7 @@ This
 
 Becomes
 
-![Example Audio](/data/telegram-channel-scheduler/example-audio.jpg)
+![Example Audio](https://unnikked.ga/data/telegram-channel-scheduler/example-audio.jpg)
 
 ## document
 
@@ -537,7 +537,7 @@ This
 
 Becomes
 
-![Example document](/data/telegram-channel-scheduler/example-document.jpg)
+![Example document](https://unnikked.ga/data/telegram-channel-scheduler/example-document.jpg)
 
 ## sticker
 
@@ -591,7 +591,7 @@ This
 
 Becomes
 
-![Example sticker](/data/telegram-channel-scheduler/example-sticker.jpg)
+![Example sticker](https://unnikked.ga/data/telegram-channel-scheduler/example-sticker.jpg)
 
 
 ## video
@@ -678,7 +678,7 @@ This
 
 Becomes
 
-![Example video](/data/telegram-channel-scheduler/example-video.jpg)
+![Example video](https://unnikked.ga/data/telegram-channel-scheduler/example-video.jpg)
 
 ## voice
 
@@ -734,7 +734,7 @@ This
 
 Becomes
 
-![Example voice](/data/telegram-channel-scheduler/example-voice.jpg)
+![Example voice](https://unnikked.ga/data/telegram-channel-scheduler/example-voice.jpg)
 
 ## location
 
@@ -790,7 +790,7 @@ This
 
 Becomes
 
-![Example Location](/data/telegram-channel-scheduler/example-location.jpg)
+![Example Location](https://unnikked.ga/data/telegram-channel-scheduler/example-location.jpg)
 
 > **Note** This location is not where i live ;)
 
@@ -889,7 +889,7 @@ This
 
 Becomes
 
-![Example venue](/data/telegram-channel-scheduler/example-venue.jpg)
+![Example venue](https://unnikked.ga/data/telegram-channel-scheduler/example-venue.jpg)
 
 ## contact
 
@@ -975,7 +975,7 @@ This
 
 Becomes
 
-![Example contact](/data/telegram-channel-scheduler/example-contact.jpg)
+![Example contact](https://unnikked.ga/data/telegram-channel-scheduler/example-contact.jpg)
 
 ## Conclusions
 
