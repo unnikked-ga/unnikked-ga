@@ -44,7 +44,7 @@ sudo apt-get install apache2
 
 After finishing the installation the web server is automatically started, you can check if everything is ok by visiting your server using it's IP or the domain pointed.
 
-<img class="img-responsive" src="data/apache-it-works.png" alt="Apache It Works">
+<img class="img-responsive" src="https://unnikked.ga/data/apache-it-works.png" alt="Apache It Works">
 
 <blockquote>
 On Ubuntu you can handle services using the `service` command
@@ -72,7 +72,7 @@ sudo apt-get install mysql-server php5-mysql libapache2-mod-auth-mysql
 
 During the installation you will be asked for choosing a password for the `root` user of MySQL
 
-<img class="img-responsive" src="data/root-mysql-password.png" alt="MySQL root password">
+<img class="img-responsive" src="https://unnikked.ga/data/root-mysql-password.png" alt="MySQL root password">
 
 We can now install a test database using:
 
