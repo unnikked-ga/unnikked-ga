@@ -29,7 +29,7 @@ First thing first let's define once for all what means long polling and what mea
 
 ## Long polling
 
-I've already explained it on a [previous blog post](/how-to-create-your-custom-telegram-bot-using-the-long-polling-technique/) but let's [ELI5](https://www.reddit.com/r/explainlikeimfive).
+I've already explained it on a [previous blog post](https://unnikked.ga/how-to-create-your-custom-telegram-bot-using-the-long-polling-technique/) but let's [ELI5](https://www.reddit.com/r/explainlikeimfive).
 
 When you use the [getUpdate](https://core.telegram.org/bots/api#getupdates) method your bot is constantly asking to the telegram server if there are any messages for it to process. It's like the bot begs every seconds the API server to feed it with updates.
 
