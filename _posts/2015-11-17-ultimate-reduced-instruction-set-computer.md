@@ -106,7 +106,7 @@ We could all agree that this architecture is simple but yet hard to work with. B
 - Do you want to understand how a compiler can be made ? Also Oleg Mazonka created <u>[Higher Subleq](http://mazonka.com/subleq/hsq.html)</u> a C-ish language to subleq compiler.
 - Do you want to see how the real hardware for this architecture can be made? <u>[David A Roberts](https://davidar.io/)</u> <u>[implemented it](https://github.com/davidar/subleq)</u> using Logisim
 
-![Subleq Logisim](/data/subleq-logisim.jpg)
+![Subleq Logisim](https://unnikked.ga/data/subleq-logisim.jpg)
 
 ## Conclusions
 
